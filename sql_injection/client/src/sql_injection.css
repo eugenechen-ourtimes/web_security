@@ -1,0 +1,16 @@
+
+.sql-injection-space-1 {
+    height: 8px;
+}
+
+.sql-injection-space-2 {
+    height: 8px;
+}
+
+.sql-injection-table, .sql-injection-table-th, .sql-injection-table-td {
+    border: 1px solid #555;
+}
+
+.sql-injection-error-message {
+    color: red;
+}

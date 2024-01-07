@@ -9,6 +9,7 @@ const Xss = () => {
     const handleSubmit = () => {
         const comment = document.getElementById("xss-input-field").value;
         setComments([...comments, comment]);
+
         const url = getUrl(`/comment?content=${comment}`); 
         axios.post(url)
             .then(() => {})

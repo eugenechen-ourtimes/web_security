@@ -1,0 +1,19 @@
+.transfer-page-space-1 {
+    height: 8px;
+}
+
+.transfer-page-space-2 {
+    height: 8px;
+}
+
+.transfer-page-space-3 {
+    height: 4px;
+}
+
+.transfer-page-success {
+    color: green;
+}
+
+.transfer-page-error {
+    color: red;
+}

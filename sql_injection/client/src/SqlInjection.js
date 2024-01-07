@@ -10,7 +10,8 @@ const SqlInjection = () => {
         const username = document.getElementById("sql-injection-username").value;
         const password = document.getElementById("sql-injection-password").value;
 
-        axios.get(getUrl(`/user-profile?username=${username}&password=${password}`))
+        const url = getUrl(`/user-profile?username=${username}&password=${password}`);
+        axios.get(url)
             .then((res) => {
                 setUserProfiles(res.data);
                 setErrorMessage("");

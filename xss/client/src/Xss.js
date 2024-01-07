@@ -9,7 +9,8 @@ const Xss = () => {
     const handleSubmit = () => {
         const comment = document.getElementById("xss-input-field").value;
         setComments([...comments, comment]);
-        axios.post(getUrl(`/comment?content=${comment}`))
+        const url = getUrl(`/comment?content=${comment}`); 
+        axios.post(url)
             .then(() => {})
             .catch((err) => {
                 console.error(err);
@@ -17,7 +18,8 @@ const Xss = () => {
     };
 
     useEffect(() => {
-        axios.get(getUrl("/comments"))
+        const url = getUrl("/comments"); 
+        axios.get(url)
             .then((res) => {
                 const comments = [];
                 for (let comment of res.data) {

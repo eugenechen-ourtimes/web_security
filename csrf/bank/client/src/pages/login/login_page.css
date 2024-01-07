@@ -1,0 +1,11 @@
+.login-page-space-1 {
+    height: 8px;
+}
+
+.login-page-space-2 {
+    height: 4px;
+}
+
+.login-page-error {
+    color: red;
+}

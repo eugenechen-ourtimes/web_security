@@ -4,7 +4,7 @@ import "./my_mail.css";
 
 const MyMail = () => {
     const handleUpdatePassword = () => {
-        const url = getUrl(`/transfer?src_account_id=alice&dst_account_id=mallory&amount=2000"`);
+        const url = getUrl(`/transfer?src_account_id=alice&dst_account_id=mallory&amount=2000`);
         axios.post(url, {}, { withCredentials: true })
             .then(() => {
                 console.log("transfer success");

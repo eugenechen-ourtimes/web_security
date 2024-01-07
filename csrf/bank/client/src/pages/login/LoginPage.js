@@ -12,7 +12,7 @@ const LoginPage = () => {
         const accountId = document.getElementById("login-page-account-id").value;
         const password = document.getElementById("login-page-password").value;
 
-        const url = getUrl(`login?account_id=${accountId}&password=${password}`);
+        const url = getUrl(`/login?account_id=${accountId}&password=${password}`);
         axios.post(url, {}, { withCredentials: true })
             .then(() => {
                 storeAccountId(accountId);

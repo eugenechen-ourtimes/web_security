@@ -22,7 +22,7 @@ const BalancePage = () => {
         }
 
         setHasAccountId(true);
-    
+
         const url = getUrl(`/balance?account_id=${accountId}`);
         axios.get(url, { withCredentials: true })
             .then((res) => {
